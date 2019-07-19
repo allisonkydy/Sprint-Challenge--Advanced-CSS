@@ -164,6 +164,7 @@ p {
   width: 100%;
   padding: 1.2rem 0;
   background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
 }
 .navigation .nav-text {
   max-width: 800px;
@@ -197,7 +198,7 @@ footer {
   align-items: center;
 }
 .home .intro img {
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
