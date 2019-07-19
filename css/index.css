@@ -163,8 +163,11 @@ p {
 .navigation {
   width: 100%;
   padding: 1.2rem 0;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.9);
   border-bottom: 2px solid #F1F1F1;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .navigation .nav-text {
   margin: 0 auto;
