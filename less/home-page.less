@@ -114,4 +114,56 @@
       }
     }
   }
+
+  .subscribe {
+    border-top: 1px solid @main-border-color;
+    padding: 40px 15px;
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      width: 75%;
+      margin: 0 auto;
+      padding: 30px 5%;
+      text-align: center;
+      background-color: @wild-sand;
+      border-radius: 10px;
+
+      .phone-100w();
+
+      input[type=text] {
+        width: 100%;
+        padding: 7px 0 7px 4px;
+        margin-bottom: 15px;
+        border: 1px solid @main-border-color;
+        border-radius: 5px;
+      }
+
+      input[name=first-name], input[name="state"] {
+        margin-right: 10px;
+      }
+
+      .name, .state-zip {
+        .flex(row, space-between, flex-start);
+      }
+
+      .street-city {
+        .flex(column, flex-start, flex-start);
+      }
+
+      input[type="submit"] {
+        margin-top: 10px;
+        .btn-style(@btn-bg-color, @porcelain, 150px, 1rem, 1rem);
+        border: 0;
+
+        .phone-100w();
+
+        &:hover {
+          border: 1px solid @btn-bg-color;
+        }
+      }
+    }
+  }
 }// home
