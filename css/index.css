@@ -167,7 +167,6 @@ p {
   border-bottom: 2px solid #F1F1F1;
 }
 .navigation .nav-text {
-  max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -251,6 +250,10 @@ footer {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 0.8rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
