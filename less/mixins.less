@@ -1,14 +1,14 @@
 // Mixins Here
 
-.btn-style(@bg-color, @txt-color, @width) {
+.btn-style(@bg-color, @txt-color, @width, @pad-top, @pad-btm) {
     background-color: @bg-color;
     color: @txt-color;
     border-radius: 5px;
     width: @width;
     font-size: 1.8rem;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 0.8rem;
+    padding-top: @pad-top;
+    padding-bottom: @pad-btm;
     cursor: pointer;
 
     &:hover {
