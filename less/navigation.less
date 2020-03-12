@@ -1,1 +1,33 @@
 // Navigation code here
+
+.navigation {
+    width: 100%;
+    padding: 1.2rem 0;
+    background-color: fade(@nav-bg, 90%);
+    border-bottom: 2px solid @nav-border;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .nav-text {
+        margin: 0 auto;
+        .flex(column, flex-start, center);
+
+        h1 {
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
+
+        nav {
+            width: 37.5rem;
+            .flex(row, space-between, unset);
+
+            a {
+                color: @nav-font;
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+        }
+    }
+
+}

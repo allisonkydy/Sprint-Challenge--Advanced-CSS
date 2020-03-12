@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive layout is designed for a few specific devices using hard-coded layout widths and so is relatively fast to deploy, while a responsive layout uses responsive units to accommodate thousands of devices which helps it load faster than adaptive, but it also takes longer to build.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A mobile-first design has its base styles optimized for mobile devices and uses min-width media queries to change the layout as the screen width grows. Desktop-first design is the opposite; the base styles are optimized for desktops and max-width media queries are used to change the layout as the screen shrinks.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This changes the initial font-size to 10px from 16px to keep rem calculations simple. Base-ten calculations are easier to do in your head so you don't have to break out your calculator every time you need to assign a property using rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Pre-processing makes CSS much more powerful, DRY, and easier to read. Nesting and imports provide greatly needed organizaton and variables, mixins, escaping, and functions (...etc) let you reuse code and reduces the time required for code maintenance.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love the way nesting makes CSS so much easier to read and I love using variables and mixins to test out different properties. I haven't tried using the math operations very much. I'd like to seek out some real-world use cases so I could see where they would be useful.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

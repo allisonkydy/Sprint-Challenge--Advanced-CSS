@@ -1,1 +1,32 @@
 // Mixins Here
+
+.btn-style(@bg-color, @txt-color, @width, @pad-top, @pad-btm) {
+    background-color: @bg-color;
+    color: @txt-color;
+    border-radius: 5px;
+    width: @width;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: @pad-top;
+    padding-bottom: @pad-btm;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @txt-color;
+        color: @bg-color;
+    }
+}
+
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.phone-100w() {
+    
+    @media @phone {
+        width: 100%;
+      }
+}

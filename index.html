@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
@@ -16,12 +17,23 @@
 
 <body>
 
- <!-- navigation code here -->
+  <div class="navigation">
+    <div class="nav-text">
+      <h1>SpaceWalkers</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+      </nav>
+    </div>
+  </div>
 
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
+       <img src="img/main-header.png" alt="View of Earth's horizon from outer atmosphere">
 
       <h2>Lift Off</h2>
     
@@ -62,6 +74,34 @@
 
     </section>
 
+    <section class="subscribe">
+      <h3>Subscribe Today!</h3>
+      <form action="#">
+          <div class="name">
+            <input type="text" name="first-name" placeholder="First name">
+            <input type="text" name="last-name" placeholder="Last name">
+          </div>
+
+          <div class="phone-num">
+              <input type="text" name="phone" placeholder="Phone number">
+          </div>
+
+          <div class="street-city">
+            <input type="text" name="street" placeholder="Street Address">
+            <input type="text" name="street2" placeholder="Street Address Line 2">
+            <input type="text" name="city" placeholder="City">
+          </div>
+          
+          <div class="state-zip">
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="zip" placeholder="Zip Code">
+          </div>
+
+        <div class="submit">
+          <input type="submit" name="submit">
+        </div>
+      </form>
+    </section>
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
